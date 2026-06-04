@@ -1,0 +1,11 @@
+Your .env.local should contain:
+
+DATABASE_URL="postgres://postgres:postgres@localhost:51214/template1?sslmode=disable&connection_limit=10&connect_timeout=0&max_idle_connection_lifetime=0&pool_timeout=0&socket_timeout=0"
+DEFAULT_USER_ID="fill_this_in_after_running_seed"
+NEXT_PUBLIC_APP_NAME="DocsFlow"
+NEXT_PUBLIC_APP_URL="http://localhost:3000"
+
+IMPORTANT: The DATABASE_URL above is from `npx prisma dev`.
+Run `npx prisma dev` in a SEPARATE terminal, keep it running,
+copy the DATABASE_URL it prints, paste into .env.local.
+Then in THIS terminal run the rest of the commands.
